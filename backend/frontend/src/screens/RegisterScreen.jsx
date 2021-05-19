@@ -39,7 +39,7 @@ const RegisterScreen = ({location, history}) => {
     return (
         <React.Fragment>
             <FormContainer>
-            <h1>Sign In</h1>
+            <h1>Create New Account</h1>
             {
                 message && <Message variant="danger">
                     {message}

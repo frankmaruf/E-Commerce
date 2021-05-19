@@ -9,8 +9,8 @@ import { ORDER_CREATE_RESET } from "../constants/orderConstants";
 
 const PlaceOrderScreen = ({ history }) => {
 
-  const orderCreate = useSelector(state => state.orderCreate)
-  const { order, error, success } = orderCreate
+  const ordersCreate = useSelector(state => state.ordersCreate)
+  const { order, error, success } = ordersCreate
 
   const dispatch = useDispatch()
 
@@ -32,7 +32,7 @@ const PlaceOrderScreen = ({ history }) => {
           history.push(`/order/${order._id}`)
           dispatch({type:ORDER_CREATE_RESET})
       }
-  }, [success, history,order])
+  }, [success, history,order,dispatch])
 
   const placeOrder = () => {
       dispatch(createOrder({
