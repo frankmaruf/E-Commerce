@@ -180,9 +180,9 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 CORS_ALLOW_ALL_ORIGINS = True
 
 
-# STATIC_DIRS = [
-#     BASE_DIR / '/static/'
-# ]
+STATIC_DIRS = [
+    BASE_DIR / '/static/'
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
